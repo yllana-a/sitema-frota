@@ -9,3 +9,4 @@ export class Caminhao extends veiculo {
     public obterDescricao(): string {
         return `Caminhão: ${this.modelo}, Ano: ${this.ano}, Capacidade de Carga: ${this.capacidadeCarga}kg.`;
     }
+}
