@@ -1,10 +1,7 @@
 // Criação da Classe Veiculo (Abstração)
-// 1. Crie uma classe abstrata (ou base) chamada Veiculo. Ela terá atributos comuns a
-// todos os veículos, como modelo, ano e um status de ligado (privado).
-// 2. Crie um método ligar() e outro desligar() para controlar o status, aplicando o
-// Encapsulamento.
-// 3. Crie um método abstrato obterDescricao() que será obrigatório nas classes
-// filhas.
+// 1. Crie uma classe abstrata (ou base) chamada Veiculo. Ela terá atributos comuns a todos os veículos, como modelo, ano e um status de ligado (privado).
+// 2. Crie um método ligar() e outro desligar() para controlar o status, aplicando o Encapsulamento.
+// 3. Crie um método abstrato obterDescricao() que será obrigatório nas classes filhas.
 // 4. Crie um método acelerar() que exiba uma mensagem genérica de aceleração.
 
 export abstract class Veiculo {
