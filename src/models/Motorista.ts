@@ -4,17 +4,24 @@
 //2. O cpf e a cnh devem ser protegidos com getters e setters para garantir que não possam ser alterados após a criação do objeto.
 //3. Crie um método chamado dirigir() que exiba uma mensagem como "Motorista[nome] está dirigindo".
 
-class motorista {
-    private nome: string;
-    private _CPF: number;
-    private _CNH: number;
+export class Motorista {
+  private nome: string;
+  private _cpf: string;
+  private _cnh: string;
 
-    constructor(nome: string, _CPF: number, _CNH: number) {
-      this.nome = nome;
-      get this._CPF = _CPF;
-      get this._CNH = _CNH;
-    }
-    dirigir(): void {
-        console.log(`Motorista ${this.nome} está dirigindo.`);
-    }
+  constructor(nome: string, _cpf: string, _cnh: string) {
+    this.nome = nome;
+    this._cpf = _cpf;
+    this._cnh = _cnh;
+  }
+
+  public get cnh(): string {
+    return this._cnh;
+  }
+  public get cpf(): string {
+    return this._cpf;
+  }
+  dirigir(): void {
+    console.log(`Motorista ${this.nome} está dirigindo.`);
+  }
 }
